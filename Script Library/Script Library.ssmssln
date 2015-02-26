@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# SQL Server Management Studio Solution File, Format Version 12.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Alter Server", "Alter Server\Alter Server.ssmssqlproj", "{2235A386-A8E4-4CDF-A676-EEF708D43B2B}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Alter DB", "Alter DB\Alter DB.ssmssqlproj", "{ED33071E-67CA-49D0-95B3-AC583C246297}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "DB Status", "DB Status\DB Status.ssmssqlproj", "{61FF7CAF-F06F-4FA9-BCEF-B446DEBD0F10}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Maintenance", "Maintenance\Maintenance.ssmssqlproj", "{A0268CE1-A3CF-4628-AD84-21E231604A35}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Permissions", "Permissions\Permissions.ssmssqlproj", "{7937088D-92BC-4397-B23B-B23A3E40635B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2235A386-A8E4-4CDF-A676-EEF708D43B2B}.Default|Default.ActiveCfg = Default
+		{ED33071E-67CA-49D0-95B3-AC583C246297}.Default|Default.ActiveCfg = Default
+		{61FF7CAF-F06F-4FA9-BCEF-B446DEBD0F10}.Default|Default.ActiveCfg = Default
+		{A0268CE1-A3CF-4628-AD84-21E231604A35}.Default|Default.ActiveCfg = Default
+		{7937088D-92BC-4397-B23B-B23A3E40635B}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
