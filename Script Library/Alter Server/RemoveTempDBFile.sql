@@ -1,0 +1,6 @@
+USE [tempdb]
+GO
+DBCC SHRINKFILE('tempdev5', EMPTYFILE)
+GO
+ALTER DATABASE [tempdb] REMOVE FILE [tempdev5]
+GO

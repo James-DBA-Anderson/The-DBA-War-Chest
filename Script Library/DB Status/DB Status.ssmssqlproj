@@ -6,11 +6,59 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="LastDBAccessTimes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LastDBAccessTimes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LastTableAccessTimes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LastTableAccessTimes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ShowDBFileInfo.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ShowDBFileInfo.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ShowGUIDClusteredIndexes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ShowGUIDClusteredIndexes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ShowNonTrustedFKs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ShowNonTrustedFKs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ShowSPExecutionStats.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ShowSPExecutionStats.sql</FullPath>
+        </FileNode>
         <FileNode Name="Statistics.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Statistics.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TableSizes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>TableSizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VLF Counts.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>VLF Counts.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
