@@ -2,39 +2,112 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Server Status">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="bfxtest-dw1\datawarehouse:BENEFEX\JamesAnderson">
+          <Created>2015-03-25T15:13:43.3122568+00:00</Created>
+          <Type>SQL</Type>
+          <Server>bfxtest-dw1\datawarehouse</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="CacheUsageByTable.sql">
+        <FileNode Name="Agent Jobs And Schedules.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>CacheUsageByTable.sql</FullPath>
+          <FullPath>Agent Jobs And Schedules.sql</FullPath>
         </FileNode>
-        <FileNode Name="DeprecatedFeaturesInUse.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+        <FileNode Name="Available Disk Space.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>DeprecatedFeaturesInUse.sql</FullPath>
+          <FullPath>Available Disk Space.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowDetectedCorruption.sql">
+        <FileNode Name="Backup History.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>ShowDetectedCorruption.sql</FullPath>
+          <FullPath>Backup History.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowServerUpTime.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+        <FileNode Name="Blocking Object Name.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>ShowServerUpTime.sql</FullPath>
+          <FullPath>Blocking Object Name.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowTempDB(PFS,SGAM)Contention.sql">
+        <FileNode Name="Blocking Processes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Blocking Processes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Cache Usage By DB.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Cache Usage By DB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Cache Usage By Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Cache Usage By Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Default Data And Log Directories.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>ShowTempDB(PFS,SGAM)Contention.sql</FullPath>
+          <FullPath>Default Data And Log Directories.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Deprecated Features In Use.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Deprecated Features In Use.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Detected Corruption.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Detected Corruption.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Page Life Expectancy.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Page Life Expectancy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Server Up Time.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Server Up Time.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Service Broker Queues.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Service Broker Queues.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Temp DB (PFS,SGAM) Contention.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Temp DB (PFS,SGAM) Contention.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Temp DB Usage.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Temp DB Usage.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

@@ -5,15 +5,15 @@ This project is designed to be an easily accessible repository for MS SQL-Server
 
 Scripts for:
 
-Maintenance 
+	Maintenance 
 
-Observing the status of the server
+	Observing the status of the server
 
-Altering database and server settings and properties
+	Altering database and server settings and properties
 
-Permissions
+	Permissions
 
-PowerShell tasks
+	PowerShell tasks
 
 
 A knowledgebase of articles covering a wide range of SQL-Server related topics on:

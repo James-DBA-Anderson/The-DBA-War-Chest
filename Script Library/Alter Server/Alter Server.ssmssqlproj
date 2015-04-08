@@ -19,23 +19,35 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="AddLinkedServer.sql">
+        <FileNode Name="Add Linked Server.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>AddLinkedServer.sql</FullPath>
+          <FullPath>Add Linked Server.sql</FullPath>
         </FileNode>
-        <FileNode Name="RemoveTempDBFile.sql">
+        <FileNode Name="Backup History Removal Indexes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Backup History Removal Indexes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Remove TempDB File.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Remove TempDB File.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPID Mapping for Broken Logons.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPID Mapping for Broken Logons.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TempDB Move.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>RemoveTempDBFile.sql</FullPath>
-        </FileNode>
-        <FileNode Name="TempDBMove.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>TempDBMove.sql</FullPath>
+          <FullPath>TempDB Move.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

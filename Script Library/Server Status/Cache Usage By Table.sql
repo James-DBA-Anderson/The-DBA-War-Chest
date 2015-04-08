@@ -39,6 +39,7 @@ SELECT		TOP 20 DB_NAME(database_id) AS 'Database'
 			, OBJECT_NAME(object_id,database_id) AS 'Table Name'
 			, index_id
 			, COUNT(*) AS 'Pages in Cache'
+			, CAST(count(*) as BIGINT) * 8192 / (1024 * 1024) as BufferMB 
 			, SUM(dirtyPage) AS 'Dirty Pages'
 
 FROM		memusage_CTE 

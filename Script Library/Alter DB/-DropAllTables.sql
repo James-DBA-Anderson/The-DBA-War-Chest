@@ -1,6 +1,10 @@
 
 -- To do: Get all foreign keys from all tables and delete them first then drop all tables
 
+--SELECT	name
+--FROM		sys.objects
+--WHERE		type = 'F'; 
+
 Declare @Key nvarchar(200)
 Declare @Schema nvarchar(50)
 Declare @SQL nvarchar(max)

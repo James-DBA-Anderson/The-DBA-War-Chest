@@ -6,6 +6,7 @@
 -- Display when the last read and write occurred on each database
 
 -- Get last server restart time 
+
 SELECT	crdate AS ServerStartTime
 
 FROM	sysdatabases 

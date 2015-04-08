@@ -2,45 +2,88 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DB Status">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="bfxtest-dw1\datawarehouse:BENEFEX\JamesAnderson">
+          <Created>2015-03-25T15:00:43.8103895+00:00</Created>
+          <Type>SQL</Type>
+          <Server>bfxtest-dw1\datawarehouse</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="LastDBAccessTimes.sql">
+        <FileNode Name="DB File Info.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>LastDBAccessTimes.sql</FullPath>
+          <FullPath>DB File Info.sql</FullPath>
         </FileNode>
-        <FileNode Name="LastTableAccessTimes.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+        <FileNode Name="GUID Clustered Indexes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>LastTableAccessTimes.sql</FullPath>
+          <FullPath>GUID Clustered Indexes.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowDBFileInfo.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+        <FileNode Name="Index Fragmentation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>ShowDBFileInfo.sql</FullPath>
+          <FullPath>Index Fragmentation.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowGUIDClusteredIndexes.sql">
+        <FileNode Name="Index Usage.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>ShowGUIDClusteredIndexes.sql</FullPath>
+          <FullPath>Index Usage.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowNonTrustedFKs.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+        <FileNode Name="INT ID Remaing Values.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>ShowNonTrustedFKs.sql</FullPath>
+          <FullPath>INT ID Remaing Values.sql</FullPath>
         </FileNode>
-        <FileNode Name="ShowSPExecutionStats.sql">
+        <FileNode Name="Last DB Access Times.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Last DB Access Times.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Last Table AccessTimes.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>ShowSPExecutionStats.sql</FullPath>
+          <FullPath>Last Table AccessTimes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Missing Indexes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Missing Indexes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Non Trusted FKs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Non Trusted FKs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Show Unused Objects.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Show Unused Objects.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SP Execution Stats.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SP Execution Stats.sql</FullPath>
         </FileNode>
         <FileNode Name="Statistics.sql">
           <AssociatedConnectionMoniker />
@@ -48,11 +91,11 @@
           <AssociatedConnUserName />
           <FullPath>Statistics.sql</FullPath>
         </FileNode>
-        <FileNode Name="TableSizes.sql">
+        <FileNode Name="Table Sizes.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>TableSizes.sql</FullPath>
+          <FullPath>Table Sizes.sql</FullPath>
         </FileNode>
         <FileNode Name="VLF Counts.sql">
           <AssociatedConnectionMoniker />

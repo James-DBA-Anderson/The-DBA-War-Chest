@@ -1,9 +1,29 @@
 
 -- DBA War Chest 
 -- Rebuild All Indexes 
--- 2015-02-20 
+-- 2015-03-30
 
--- Rebuild every index in the the selected database with a fill factor of 100. 
+-- The following indexes dramatically speed up the removal of old records. 
+
+USE MSDB;
+
+--CREATE INDEX [media_set_id] ON [dbo].[backupset] ([media_set_id])
+--CREATE INDEX [restore_history_id] ON [dbo].[restorefile] ([restore_history_id])
+--CREATE INDEX [restore_history_id] ON [dbo].[restorefilegroup] ([restore_history_id])
+
+-- View record counts on the backup history tables
+
+SELECT COUNT(1) FROM restorefile
+SELECT COUNT(1) FROM restorefilegroup
+SELECT COUNT(1) FROM restorehistory
+SELECT COUNT(1) FROM backupfile
+SELECT COUNT(1) FROM backupset
+SELECT COUNT(1) FROM backupmediafamily
+SELECT COUNT(1) FROM backupmediaset
+
+-- Remove records old then the date passed as a param.
+
+--exec sp_delete_backuphistory '2015-01-01'
 -- This will get the databases indexes and statistics in the best possible shape but
 -- it pays no attention to the fact that the index may not require rebuilding
 
