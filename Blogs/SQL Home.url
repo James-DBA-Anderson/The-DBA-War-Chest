@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=https://www.simple-talk.com/sql/
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,11
+[InternetShortcut]
+URL=https://www.simple-talk.com/sql/
+IDList=
+IconFile=https://www.simple-talk.com/favicon.ico
+IconIndex=1

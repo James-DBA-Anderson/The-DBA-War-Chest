@@ -3,13 +3,13 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="bfxtest-dw1\datawarehouse:BENEFEX\JamesAnderson">
-          <Created>2015-03-25T15:00:43.8103895+00:00</Created>
+        <ConnectionNode Name="EXXON-EU-AG01.exxon-eu.htec.co.uk:DC\da_janderson">
+          <Created>2015-04-21T16:05:24.9926421+01:00</Created>
           <Type>SQL</Type>
-          <Server>bfxtest-dw1\datawarehouse</Server>
+          <Server>EXXON-EU-AG01.exxon-eu.htec.co.uk</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
-          <InitialDB>master</InitialDB>
+          <InitialDB>DW_MigrationControl</InitialDB>
           <LoginTimeout>15</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
@@ -26,14 +26,14 @@
           <FullPath>DB File Info.sql</FullPath>
         </FileNode>
         <FileNode Name="GUID Clustered Indexes.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>GUID Clustered Indexes.sql</FullPath>
         </FileNode>
         <FileNode Name="Index Fragmentation.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:EXXON-EU-AG01.exxon-eu.htec.co.uk:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>EXXON-EU-AG01.exxon-eu.htec.co.uk</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Index Fragmentation.sql</FullPath>
         </FileNode>
@@ -43,15 +43,15 @@
           <AssociatedConnUserName />
           <FullPath>Index Usage.sql</FullPath>
         </FileNode>
-        <FileNode Name="INT ID Remaing Values.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+        <FileNode Name="INT ID Remaining Values.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>INT ID Remaing Values.sql</FullPath>
+          <FullPath>INT ID Remaining Values.sql</FullPath>
         </FileNode>
         <FileNode Name="Last DB Access Times.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Last DB Access Times.sql</FullPath>
         </FileNode>
@@ -74,8 +74,8 @@
           <FullPath>Non Trusted FKs.sql</FullPath>
         </FileNode>
         <FileNode Name="Show Unused Objects.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Show Unused Objects.sql</FullPath>
         </FileNode>

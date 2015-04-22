@@ -1,0 +1,15 @@
+[DEFAULT]
+BASEURL=http://www.sqltact.com/
+[DOC_twitter-widget-0]
+BASEURL=http://www.sqltact.com/
+ORIGURL=
+[DOC_rufous-sandbox]
+BASEURL=http://www.sqltact.com/
+ORIGURL=
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.sqltact.com/
+IDList=
+IconFile=http://www.sqltact.com/favicon.ico
+IconIndex=1

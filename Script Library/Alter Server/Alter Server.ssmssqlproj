@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="Add Alerts Sev 16-25 and Error 823-825 .sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Add Alerts Sev 16-25 and Error 823-825 .sql</FullPath>
+        </FileNode>
         <FileNode Name="Add Linked Server.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>

@@ -3,8 +3,9 @@
 -- Show Index Fragmentation Levels
 -- 2015-03-24 
 
--- Show all indexes that have rfagmentation levels greater then the level set. 
+-- Show all indexes that have fragmentation levels greater then the level set. 
 -- Ignore indexes with small page counts as fragmentation will not have a noticable affect.
+-- TODO: Add params to select DB, table, index, partition, mode or send NULL to run for all and in LIMITED mode.
 
 DECLARE @FragmentationPercentage INT = 30, @PageCount INT = 100
 
