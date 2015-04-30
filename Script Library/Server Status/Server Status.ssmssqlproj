@@ -3,10 +3,10 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="bfxtest-dw1\datawarehouse:BENEFEX\JamesAnderson">
-          <Created>2015-03-25T15:13:43.3122568+00:00</Created>
+        <ConnectionNode Name="BL4655J-JA-DT\JAMESA_TEST:DC\da_janderson">
+          <Created>2015-04-28T11:22:54.8513216+01:00</Created>
           <Type>SQL</Type>
-          <Server>bfxtest-dw1\datawarehouse</Server>
+          <Server>BL4655J-JA-DT\JAMESA_TEST</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
           <InitialDB>master</InitialDB>
@@ -20,14 +20,14 @@
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="Agent Jobs And Schedules.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BL4655J-JA-DT\JAMESA_TEST:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BL4655J-JA-DT\JAMESA_TEST</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Agent Jobs And Schedules.sql</FullPath>
         </FileNode>
         <FileNode Name="Available Disk Space.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Available Disk Space.sql</FullPath>
         </FileNode>
@@ -38,26 +38,26 @@
           <FullPath>Backup History.sql</FullPath>
         </FileNode>
         <FileNode Name="Blocking Object Name.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Blocking Object Name.sql</FullPath>
         </FileNode>
         <FileNode Name="Blocking Processes.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Blocking Processes.sql</FullPath>
         </FileNode>
         <FileNode Name="Cache Usage By DB.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Cache Usage By DB.sql</FullPath>
         </FileNode>
         <FileNode Name="Cache Usage By Table.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Cache Usage By Table.sql</FullPath>
         </FileNode>
@@ -78,6 +78,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Detected Corruption.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Memory Pressure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BL4655J-JA-DT\JAMESA_TEST:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BL4655J-JA-DT\JAMESA_TEST</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Memory Pressure.sql</FullPath>
         </FileNode>
         <FileNode Name="Page Life Expectancy.sql">
           <AssociatedConnectionMoniker />
@@ -104,8 +110,8 @@
           <FullPath>Temp DB (PFS,SGAM) Contention.sql</FullPath>
         </FileNode>
         <FileNode Name="Temp DB Usage.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bfxtest-dw1\datawarehouse:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>bfxtest-dw1\datawarehouse</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Temp DB Usage.sql</FullPath>
         </FileNode>

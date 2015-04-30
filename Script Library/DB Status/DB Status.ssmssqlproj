@@ -2,20 +2,7 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DB Status">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items>
-        <ConnectionNode Name="EXXON-EU-AG01.exxon-eu.htec.co.uk:DC\da_janderson">
-          <Created>2015-04-21T16:05:24.9926421+01:00</Created>
-          <Type>SQL</Type>
-          <Server>EXXON-EU-AG01.exxon-eu.htec.co.uk</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB>DW_MigrationControl</InitialDB>
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-      </Items>
+      <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
@@ -32,8 +19,8 @@
           <FullPath>GUID Clustered Indexes.sql</FullPath>
         </FileNode>
         <FileNode Name="Index Fragmentation.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:EXXON-EU-AG01.exxon-eu.htec.co.uk:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>EXXON-EU-AG01.exxon-eu.htec.co.uk</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Index Fragmentation.sql</FullPath>
         </FileNode>
