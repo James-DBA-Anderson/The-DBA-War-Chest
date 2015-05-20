@@ -12,6 +12,12 @@
           <AssociatedConnUserName />
           <FullPath>DB File Info.sql</FullPath>
         </FileNode>
+        <FileNode Name="File Group Objects.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>File Group Objects.sql</FullPath>
+        </FileNode>
         <FileNode Name="GUID Clustered Indexes.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />

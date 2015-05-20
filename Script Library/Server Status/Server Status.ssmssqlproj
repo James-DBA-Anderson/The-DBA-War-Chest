@@ -2,26 +2,13 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Server Status">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items>
-        <ConnectionNode Name="BL4655J-JA-DT\JAMESA_TEST:DC\da_janderson">
-          <Created>2015-04-28T11:22:54.8513216+01:00</Created>
-          <Type>SQL</Type>
-          <Server>BL4655J-JA-DT\JAMESA_TEST</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB>master</InitialDB>
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-      </Items>
+      <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="Agent Jobs And Schedules.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BL4655J-JA-DT\JAMESA_TEST:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BL4655J-JA-DT\JAMESA_TEST</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Agent Jobs And Schedules.sql</FullPath>
         </FileNode>
@@ -79,9 +66,15 @@
           <AssociatedConnUserName />
           <FullPath>Detected Corruption.sql</FullPath>
         </FileNode>
+        <FileNode Name="Dirty Pages In Memory.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Dirty Pages In Memory.sql</FullPath>
+        </FileNode>
         <FileNode Name="Memory Pressure.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BL4655J-JA-DT\JAMESA_TEST:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>BL4655J-JA-DT\JAMESA_TEST</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Memory Pressure.sql</FullPath>
         </FileNode>

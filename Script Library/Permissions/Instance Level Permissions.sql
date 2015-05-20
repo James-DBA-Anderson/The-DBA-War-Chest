@@ -1,7 +1,17 @@
-    
+
+-- DBA War Chest 
+-- Instance Level Permissions
+-- 2015-05-19
+
+-- Show the logins for the instance that the user accounts in each database map to.
+-- Databases using contained user accounts will not have corresponding logins here.
+
 	SELECT		p.name AS UserName, 
 				p.type_desc AS UserType, 
-				CASE WHEN p.is_disabled = 1 THEN 'Yes' END AS [Disabled],
+				CASE 
+					WHEN p.is_disabled = 1 
+					THEN 'Yes' 
+				END AS [Disabled],
 				pp.name AS ServerRole, 
 				pp.type_desc AS RoleType,
 				p.create_date AS CreateDate,

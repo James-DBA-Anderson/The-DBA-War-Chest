@@ -6,7 +6,7 @@
 -- Show all SQL Agent jobs with their schedules and longest run time.
 
 USE msdb
-GO;
+GO
 
 SELECT			dbo.sysjobs.Name AS 'Job Name', 
 				'Job Enabled' = CASE dbo.sysjobs.Enabled
@@ -171,5 +171,4 @@ LEFT OUTER JOIN (SELECT		job_id
 
 WHERE			Next_run_time <> 0
 
-ORDER BY		[Start Date]
-				, [Start Time]
+ORDER BY		[Job Name]
