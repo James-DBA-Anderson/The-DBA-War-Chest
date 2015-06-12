@@ -30,6 +30,12 @@
           <AssociatedConnUserName />
           <FullPath>DenyLogBackUpRole.sql</FullPath>
         </FileNode>
+        <FileNode Name="Instance Level Permissions.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Instance Level Permissions.sql</FullPath>
+        </FileNode>
         <FileNode Name="Logons Not Used.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -65,12 +71,6 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>RemoveWritePermissions.sql</FullPath>
-        </FileNode>
-        <FileNode Name="ServerLevelPermissions.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>ServerLevelPermissions.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

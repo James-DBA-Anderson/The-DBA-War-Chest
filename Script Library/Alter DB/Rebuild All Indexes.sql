@@ -21,7 +21,7 @@ SELECT COUNT(1) FROM backupset
 SELECT COUNT(1) FROM backupmediafamily
 SELECT COUNT(1) FROM backupmediaset
 
--- Remove records old then the date passed as a param.
+-- Remove records older then the date passed as a param.
 
 --exec sp_delete_backuphistory '2015-01-01'
 -- This will get the databases indexes and statistics in the best possible shape but

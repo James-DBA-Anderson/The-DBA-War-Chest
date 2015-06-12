@@ -30,11 +30,11 @@
           <AssociatedConnUserName />
           <FullPath>Remove TempDB File.sql</FullPath>
         </FileNode>
-        <FileNode Name="SPID Mapping for Broken Logons.sql">
+        <FileNode Name="SID Mapping for Broken Logons.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>SPID Mapping for Broken Logons.sql</FullPath>
+          <FullPath>SID Mapping for Broken Logons.sql</FullPath>
         </FileNode>
         <FileNode Name="TempDB Move.sql">
           <AssociatedConnectionMoniker />

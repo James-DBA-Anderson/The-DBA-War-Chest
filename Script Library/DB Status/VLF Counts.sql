@@ -25,7 +25,7 @@ IF OBJECT_ID('tempdb..#LogInfo') IS NOT NULL
 CREATE TABLE #LogInfo
 (
 	DBName NVARCHAR(128),
-	NoRows INT
+	VLF_Count INT
 )
 
 IF OBJECT_ID('tempdb..#LogDetails') IS NOT NULL
@@ -59,7 +59,7 @@ BEGIN
 		SELECT	@DBName, @Count
 	END TRY
 	BEGIN CATCH
-		PRINT N'Failed disocivering VLF count for ' + @DBName + ': ' + Error_Message()
+		PRINT N'Failed discovering VLF count for ' + @DBName + ': ' + Error_Message()
 	END CATCH
 
 	DELETE FROM #DBs WHERE DBName = @DBName
@@ -68,7 +68,7 @@ END
 
 
 SELECT	DBName
-		,NoRows
+		,VLF_Count
 
 FROM	#LogInfo
 

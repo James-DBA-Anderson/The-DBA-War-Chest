@@ -66,6 +66,12 @@
           <AssociatedConnUserName />
           <FullPath>Non Trusted FKs.sql</FullPath>
         </FileNode>
+        <FileNode Name="Partition Stats.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Partition Stats.sql</FullPath>
+        </FileNode>
         <FileNode Name="Show Unused Objects.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />

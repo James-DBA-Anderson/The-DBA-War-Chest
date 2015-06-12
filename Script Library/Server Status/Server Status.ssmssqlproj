@@ -12,6 +12,12 @@
           <AssociatedConnUserName />
           <FullPath>Agent Jobs And Schedules.sql</FullPath>
         </FileNode>
+        <FileNode Name="Alerts on SQL Agent.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Alerts on SQL Agent.sql</FullPath>
+        </FileNode>
         <FileNode Name="Available Disk Space.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -72,6 +78,12 @@
           <AssociatedConnUserName />
           <FullPath>Dirty Pages In Memory.sql</FullPath>
         </FileNode>
+        <FileNode Name="Linked Servers.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Linked Servers.sql</FullPath>
+        </FileNode>
         <FileNode Name="Memory Pressure.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
@@ -83,6 +95,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Page Life Expectancy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Restore History.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Restore History.sql</FullPath>
         </FileNode>
         <FileNode Name="Server Up Time.sql">
           <AssociatedConnectionMoniker />

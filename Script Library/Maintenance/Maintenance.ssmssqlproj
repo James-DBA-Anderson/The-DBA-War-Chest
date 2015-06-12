@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Maintenance">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items />
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="AlterAgentJobSchedules.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>AlterAgentJobSchedules.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Backup Multiple Files.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Backup Multiple Files.sql</FullPath>
+        </FileNode>
+        <FileNode Name="BackupAllDBs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>BackupAllDBs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ByteOrderMark.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ByteOrderMark.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Cleanup Replication.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Cleanup Replication.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ColumnSearch.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ColumnSearch.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CronScheduleExpression.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>CronScheduleExpression.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CSV to Rows.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>CSV to Rows.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DBCC CheckDB Offload.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DBCC CheckDB Offload.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DDL_Log.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DDL_Log.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ExcelSelectData.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ExcelSelectData.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FailedLogonsPossibleBruteForce.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FailedLogonsPossibleBruteForce.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FileGrowth (Default Trace).sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FileGrowth (Default Trace).sql</FullPath>
+        </FileNode>
+        <FileNode Name="FileStats.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FileStats.sql</FullPath>
+        </FileNode>
+        <FileNode Name="JoinsMissingPredicates.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>JoinsMissingPredicates.sql</FullPath>
+        </FileNode>
+        <FileNode Name="JSONParserFunction.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>JSONParserFunction.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LogShip.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LogShip.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LogShipStandBy.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LogShipStandBy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LogUsage.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LogUsage.sql</FullPath>
+        </FileNode>
+        <FileNode Name="MergeStatementGenerator.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>MergeStatementGenerator.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ModifiedObjects.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ModifiedObjects.sql</FullPath>
+        </FileNode>
+        <FileNode Name="MonitorLogShippedDBs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>MonitorLogShippedDBs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Partition Fullness.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Partition Fullness.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Read Only Routing URL Generator.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Read Only Routing URL Generator.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Remove log shipping.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Remove log shipping.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ReplicationMonitor.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ReplicationMonitor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RestoreAllBakFilesFromBackupHistory.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>RestoreAllBakFilesFromBackupHistory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RestoreDBs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>RestoreDBs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SelectFromAllTablesWithACertainColumn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SelectFromAllTablesWithACertainColumn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Serverity20AndUpExtenddedEventsQuery.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Serverity20AndUpExtenddedEventsQuery.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SP_Who3.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SP_Who3.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQL Segment.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQL Segment.sql</FullPath>
+        </FileNode>
+        <FileNode Name="StoredProcExectionCounts.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>StoredProcExectionCounts.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SyntaxChecker.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SyntaxChecker.sql</FullPath>
+        </FileNode>
+        <FileNode Name="WaitStats.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>WaitStats.sql</FullPath>
+        </FileNode>
+        <FileNode Name="WaitStats24HourSnap.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>WaitStats24HourSnap.sql</FullPath>
+        </FileNode>
+        <FileNode Name="XMLParser.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>XMLParser.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
