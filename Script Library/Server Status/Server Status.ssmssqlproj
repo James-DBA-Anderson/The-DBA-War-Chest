@@ -96,6 +96,12 @@
           <AssociatedConnUserName />
           <FullPath>Page Life Expectancy.sql</FullPath>
         </FileNode>
+        <FileNode Name="Plan Cache Usage.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Plan Cache Usage.sql</FullPath>
+        </FileNode>
         <FileNode Name="Restore History.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />

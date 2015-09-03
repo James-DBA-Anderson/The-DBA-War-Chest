@@ -39,12 +39,13 @@
 			
 			INSERT INTO @Permissions
 			EXEC SP_ExecuteSql @SQLToExecute = @SQL
-
-			DELETE FROM @DBs WHERE DBName = @DB
+			
 		END TRY
 		BEGIN CATCH
 			SELECT 'Failed to retrieve DB level permissions for ' + @DB + '. ' + ERROR_MESSAGE() + ' ' + @SQL
 		END CATCH
+
+		DELETE FROM @DBs WHERE DBName = @DB
 	END
 
 	SELECT		*
