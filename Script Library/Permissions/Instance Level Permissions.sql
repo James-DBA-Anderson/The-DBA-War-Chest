@@ -13,12 +13,14 @@
 					THEN 'Yes' 
 				END AS [Disabled],
 				pp.name AS ServerRole, 
-				pp.type_desc AS RoleType,
+				sl.SID,
+				sl.password_hash,
 				p.create_date AS CreateDate,
 				p.modify_date AS ModifyDate
- 
-	FROM		sys.server_role_members roles 
-	JOIN		sys.server_principals p ON roles.member_principal_id = p.principal_id 
-	JOIN		sys.server_principals pp ON roles.role_principal_id = pp.principal_id
+
+	FROM		sys.server_principals p  
+	LEFT JOIN	sys.sql_logins sl ON sl.principal_id = p.principal_id	
+	LEFT JOIN	sys.server_role_members rm ON p.principal_id = rm.member_principal_id
+	LEFT JOIN	sys.server_principals pp ON rm.role_principal_id = pp.principal_id
 
 	ORDER BY	p.name

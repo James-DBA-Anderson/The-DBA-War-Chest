@@ -3,6 +3,7 @@
 -- Statistics 
 -- 2015-02-20 
 
+-- Compatible with: SQL Server 2008 R2 +
 -- Return information about statistcs in the current database
 
 
@@ -18,4 +19,6 @@ SELECT		OBJECT_NAME([sp].[object_id]) AS "Table",
 FROM		[sys].[stats] AS [s]
 OUTER APPLY sys.dm_db_stats_properties ([s].[object_id],[s].[stats_id]) AS [sp]
 
---WHERE [s].[object_id] = OBJECT_ID(N'SpecificTableName');
+WHERE		modification_counter > 10000
+-- Filter the scan for specific table or indexed view
+--AND[s].[object_id] = OBJECT_ID(N'SpecificTableName');

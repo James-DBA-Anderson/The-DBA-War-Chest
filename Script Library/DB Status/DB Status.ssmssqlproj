@@ -24,6 +24,12 @@
           <AssociatedConnUserName />
           <FullPath>GUID Clustered Indexes.sql</FullPath>
         </FileNode>
+        <FileNode Name="Heap Fragmentation.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Heap Fragmentation.sql</FullPath>
+        </FileNode>
         <FileNode Name="Index Fragmentation.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />

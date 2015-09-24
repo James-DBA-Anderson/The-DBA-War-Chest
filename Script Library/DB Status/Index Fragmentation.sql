@@ -13,7 +13,7 @@ DECLARE @ScanLevel VARCHAR(8), @FragmentationPercentage INT = 30, @PageCount INT
 
 SELECT	@ScanLevel = 'Limited' -- DEFAULT, LIMITED, SAMPLED, DETAILED
 		, @FragmentationPercentage = 30 -- Show all indexes with an average fragmentation level >= 30%
-		, @PageCount = 100 -- Show all indexes that contain more than 100 pages. 
+		, @PageCount = 1500 -- Show all indexes that contain more than 1500 pages. 
 
 --------------------------------------------------------
 
