@@ -2,92 +2,19 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Server Status">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items>
-        <ConnectionNode Name="BL4655J-JA-DT\JAMESA_TEST:DC\da_janderson">
-          <Created>2015-09-14T08:30:08.8130829+01:00</Created>
-          <Type>SQL</Type>
-          <Server>BL4655J-JA-DT\JAMESA_TEST</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB>UtilityDB_Morrisons</InitialDB>
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-        <ConnectionNode Name="PO-EM-DWH-S01.exxon-eu.htec.co.uk\DWHOLAP:DC\da_janderson">
-          <Created>2015-09-14T08:46:40.7158222+01:00</Created>
-          <Type>SQL</Type>
-          <Server>PO-EM-DWH-S01.exxon-eu.htec.co.uk\DWHOLAP</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB />
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-        <ConnectionNode Name="PO-EM-OLTP01-01.exxon-eu.htec.co.uk\OLTP:DC\da_janderson">
-          <Created>2015-09-16T14:17:07.6408828+01:00</Created>
-          <Type>SQL</Type>
-          <Server>PO-EM-OLTP01-01.exxon-eu.htec.co.uk\OLTP</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB />
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-        <ConnectionNode Name="PO-EM-OLTP01-02.exxon-eu.htec.co.uk:DC\da_janderson">
-          <Created>2015-09-16T13:38:07.9310232+01:00</Created>
-          <Type>SQL</Type>
-          <Server>PO-EM-OLTP01-02.exxon-eu.htec.co.uk</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB>EM_OLL_OLTP</InitialDB>
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-        <ConnectionNode Name="PO-EM-SSRS01-01.exxon-eu.htec.co.uk\INTEGRATION:DC\da_janderson">
-          <Created>2015-09-14T08:30:37.5639577+01:00</Created>
-          <Type>SQL</Type>
-          <Server>PO-EM-SSRS01-01.exxon-eu.htec.co.uk\INTEGRATION</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB />
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-        <ConnectionNode Name="so-dc-dbgather:DC\da_janderson">
-          <Created>2015-09-15T13:23:54.8475257+01:00</Created>
-          <Type>SQL</Type>
-          <Server>so-dc-dbgather</Server>
-          <UserName />
-          <Authentication>Windows Authentication</Authentication>
-          <InitialDB>GathererDb</InitialDB>
-          <LoginTimeout>15</LoginTimeout>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
-      </Items>
+      <Items />
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="Agent Jobs And Schedules.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PO-EM-SSRS01-01.exxon-eu.htec.co.uk\INTEGRATION:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>PO-EM-SSRS01-01.exxon-eu.htec.co.uk\INTEGRATION</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Agent Jobs And Schedules.sql</FullPath>
         </FileNode>
         <FileNode Name="Alerts on SQL Agent.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PO-EM-OLTP01-01.exxon-eu.htec.co.uk\OLTP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>PO-EM-OLTP01-01.exxon-eu.htec.co.uk\OLTP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Alerts on SQL Agent.sql</FullPath>
         </FileNode>
@@ -98,8 +25,8 @@
           <FullPath>Available Disk Space.sql</FullPath>
         </FileNode>
         <FileNode Name="Backup History.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PO-EM-OLTP01-01.exxon-eu.htec.co.uk\OLTP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>PO-EM-OLTP01-01.exxon-eu.htec.co.uk\OLTP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Backup History.sql</FullPath>
         </FileNode>
@@ -110,8 +37,8 @@
           <FullPath>Blocking Object Name.sql</FullPath>
         </FileNode>
         <FileNode Name="Blocking Processes.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:so-dc-dbgather:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>so-dc-dbgather</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Blocking Processes.sql</FullPath>
         </FileNode>
@@ -200,14 +127,14 @@
           <FullPath>Service Broker Queues.sql</FullPath>
         </FileNode>
         <FileNode Name="Temp DB (PFS,SGAM) Contention.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PO-EM-OLTP01-02.exxon-eu.htec.co.uk:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>PO-EM-OLTP01-02.exxon-eu.htec.co.uk</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Temp DB (PFS,SGAM) Contention.sql</FullPath>
         </FileNode>
         <FileNode Name="Temp DB Usage.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PO-EM-OLTP01-02.exxon-eu.htec.co.uk:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>PO-EM-OLTP01-02.exxon-eu.htec.co.uk</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Temp DB Usage.sql</FullPath>
         </FileNode>
