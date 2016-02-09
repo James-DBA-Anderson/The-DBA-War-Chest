@@ -44,7 +44,6 @@ BEGIN
 		EXEC sp_executesql @alter_command
 	END TRY
 	BEGIN CATCH
-		SET @i = @i + 1
 		SELECT 'Error: ' + @file_name + ' ' + ERROR_MESSAGE()
 	END CATCH
 	SET @i = @i + 1
