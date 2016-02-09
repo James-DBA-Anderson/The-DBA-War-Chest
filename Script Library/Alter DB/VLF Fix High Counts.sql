@@ -33,10 +33,10 @@ SELECT @shrink_command = 'DBCC SHRINKFILE (N''' + @file_name + ''' , 0)'
 PRINT @shrink_command
 EXEC sp_executesql @shrink_command
 
-DECLARE @i INT = 0, 
+DECLARE @i INT = 1, 
 		@Chunks INT = ROUND((((@file_size * 8) / 1024.0) / 8000), 0) -- Get number of 8GB size chunks that will fit into the log file.
 
-WHILE @i < @Chunks
+WHILE @i <= @Chunks
 BEGIN
 	BEGIN TRY
 		SELECT @alter_command = 'ALTER DATABASE [' + db_name() + '] MODIFY FILE (NAME = N''' + @file_name + ''', SIZE = ' + CONVERT(VARCHAR(10), (@ChunkSize * @i)) + ' MB)'
@@ -44,6 +44,7 @@ BEGIN
 		EXEC sp_executesql @alter_command
 	END TRY
 	BEGIN CATCH
+		SET @i = @i + 1
 		SELECT 'Error: ' + @file_name + ' ' + ERROR_MESSAGE()
 	END CATCH
 	SET @i = @i + 1
