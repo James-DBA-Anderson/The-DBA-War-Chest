@@ -24,12 +24,13 @@ SELECT		OBJECT_NAME(ind.OBJECT_ID) AS TableName
 			, ins.index_depth AS IndexDepth
 			, ins.avg_fragmentation_in_percent
 
-FROM		sys.dm_db_index_physical_stats(DB_ID(), NULL, NULL, NULL, @ScanLevel) ins
-JOIN		sys.indexes ind ON ind.object_id = ins.object_id
-							AND ind.index_id = ins.index_id
+FROM		sys.indexes ind 
+CROSS APPLY	sys.dm_db_index_physical_stats(DB_ID(), ind.object_id, ind.index_id, NULL, @ScanLevel) ins  
 
 WHERE		ins.avg_fragmentation_in_percent >= @FragmentationPercentage
 			AND ins.page_count >= @PageCount
+
+			AND ind.[object_id] = OBJECT_ID(N'TABLE-NAME')
 
 ORDER BY	ins.avg_fragmentation_in_percent DESC
 
