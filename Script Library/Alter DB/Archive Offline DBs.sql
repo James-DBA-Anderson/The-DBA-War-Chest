@@ -14,9 +14,9 @@ DECLARE @Error int = 0, @ReturnCode int, @ErrorMessage nvarchar(max)
 
 -- Set variables --------------------------------------------------------
 
-DECLARE		@BackupPath VARCHAR(1024) = 'C:\Temp', -- Folder path to store .bak fils.
+DECLARE		@BackupPath VARCHAR(1024) = 'D:\Archive', -- Folder path to store .bak fils.
 			@DropDBs BIT = 1, 
-			@ScriptOnly BIT = 0, -- Produce scripts for the work or run automatically.
+			@ScriptOnly BIT = 1, -- Produce scripts for the work or run automatically.
 			@ArchiveDate NVARCHAR(10) = CONVERT(NVARCHAR(10), GETDATE(), 112);
 
 -- Sanitise Inputs ------------------------------------------------------		
@@ -73,6 +73,19 @@ SET ONLINE;';
 			EXEC sp_ExecuteSQL @SQL;
 		END
 
+		SET @SQL = N'
+ALTER DATABASE ' + QUOTENAME(@DBName) + N'
+SET SINGLE_USER
+WITH ROLLBACK IMMEDIATE;';
+
+		IF @ScriptOnly = 1
+		BEGIN
+			PRINT @SQL;
+		END ELSE
+		BEGIN
+			EXEC sp_ExecuteSQL @SQL;
+		END
+
 		IF @ScriptOnly = 0
 		BEGIN		
 			WHILE @Online = 6
@@ -86,7 +99,8 @@ SET ONLINE;';
 
 		IF (@AutoUpdateStatsAsync = 1) 
 		BEGIN
-			SET @SQL = N'ALTER DATABASE ' + QUOTENAME(@DBName) + N' SET AUTO_UPDATE_STATISTICS_ASYNC OFF;';
+			SET @SQL = N'
+ALTER DATABASE ' + QUOTENAME(@DBName) + N' SET AUTO_UPDATE_STATISTICS_ASYNC OFF;';
 
 			IF @ScriptOnly = 1
 			BEGIN
@@ -95,19 +109,6 @@ SET ONLINE;';
 			BEGIN
 				EXEC sp_ExecuteSQL @SQL;
 			END
-		END
-
-		SET @SQL = N'
-ALTER DATABASE ' + QUOTENAME(@DBName) + N'
-SET SINGLE_USER
-WITH ROLLBACK IMMEDIATE;';
-
-		IF @ScriptOnly = 1
-		BEGIN
-			PRINT @SQL;
-		END ELSE
-		BEGIN
-			EXEC sp_ExecuteSQL @SQL;
 		END
 
 		SET @SQL = N'
