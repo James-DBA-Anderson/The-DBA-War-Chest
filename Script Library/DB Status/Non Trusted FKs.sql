@@ -6,7 +6,8 @@
 -- Show untrusted foriegn keys in the current database.
 -- Untrusted foreign keys are ignored by the server.
 
-SELECT		fk.*
+SELECT		'ALTER TABLE ' + QUOTENAME(s.name) + '.' + QUOTENAME(object_name(fk.parent_object_id)) + ' WITH CHECK CHECK CONSTRAINT ALL' AS TheFix, 
+			fk.*
 
 FROM		sys.foreign_keys fk
 JOIN		sys.objects o ON fk.parent_object_id = o.object_id 
