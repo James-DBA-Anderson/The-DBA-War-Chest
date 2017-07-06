@@ -47,8 +47,13 @@ WHERE database_id > 4 and name not like '%$%' -- Check status of DB - restoring,
 ORDER BY name
 SELECT @aa
 
--- ,AA,ACCA,Admin,AECOM,Amgen,AnglianCountryInns,ASOS,Atradius,autotrader,BankOfEngland,BankOfEnglandReporting,BAT,BenefexDemo,BenefexDemoPreview,BenefexRewardHub,BoAIE,BoAUK,BoAUKReporting,Boots,BreezeAndWyles,BT,BTUSA,CAA,CCEUS,CeladorRadio,Centrica,CentricaReporting,CHDA,Communications,Communisis,Countryside,CountrysideReporting,CroweCW,CroweCWReporting,CSC,DeBeers,Deliveroo,Demo_AEBoE20160617,Demo_AELSH20160617,Demo_AELSL20160617,Dentons,Doosan,Dune,EDF_Energy,EIML,Elmah,EMISGroup,Eon,ERS,Experian,ExperianReporting,Freightliner,Hastings,HML,holidayextras,Hs2,HS2122,HTC,IMSHealth,Ingredion,interserve,IOP,ITTest,ITV,jameshay,Jigsaw,Kambi,Kenwood,KonicaMinolta,KrestonReeves,LendLease,LSE,LSH,LSL,Maintenance,Markel,MarksAndSpencer,Marshall,Marvellous,MBDA,MBNA,MDLZ,MDLZROI,Micheldever,MoneySupermarket,MSD,MWSolicitors,Nexen,NGN,NortonRoseFulbright,Ombudsman,Openwork,OrdnanceSurvey,Philips,PhilipsLighting,PlusNet,QVC,RationalGroup,Reeves,Reports,Safestyle,sainsburys,Selfridges,softwarebox,SSB,SSBCI,SSBCIReporting,SSBReporting,SSP,TeachFirst,TetraPakRoI,TetraPakUK,TheCarFinanceCompany,ThomsonReuters,TotalEP,TotalGP,TotalLOR,TotalUK,TravelWeeklyGroup,TRW,Tyco,Uniper,Unisys,Unisys122,WalesAndWest,wates,Wolseley,Worldpay,WorleyParsons,ZendeskMultibrand
-
+SELECT	@PrimaryServer				= 'PRIMARY\INSTANCE',
+		@SecondaryServer			= 'SECONDARY\INSTANCE',
+		@Databases					= 'DB1,DB2,DB3',
+		@BackupDir					= '\\Backup\path',		
+		@BackupDestinationDirectory	= '\\backup\destination\path',
+		@SecondaryServerDataDirectoy= 'D:\Data',
+		@SecondaryServerLogDirectoy = 'E:\Logs'
 
 --------------------------------------------------------------------------------------- 
 -- Section 1
