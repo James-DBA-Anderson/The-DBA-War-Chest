@@ -1,27 +1,14 @@
-
 -- DBA War Chest 
 -- Add Alerts 
 -- 2015-04-08
 
--- Add SQL Alerts for events with severity 16 - 25 and errors 823 - 825
+-- Add SQL Alerts for events with severity 17 - 25 and errors 823 - 825
 
 USE [msdb] 
 GO 
 
 Declare @Operator nvarchar(50)
-Set @Operator = 'DBA Team'
-
-EXEC msdb.dbo.sp_add_alert @name=N'Severity 016', 
-@message_id=0, 
-@severity=16, 
-@enabled=1, 
-@delay_between_responses=60, 
-@include_event_description_in=1, 
-@job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
-
-EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 016', @operator_name=@Operator, @notification_method = 7; 
-GO 
+Set @Operator = 'DBA'
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 017', 
 @message_id=0, 
@@ -30,10 +17,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 017',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 017', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 018', 
 @message_id=0, 
@@ -42,10 +27,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 018',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 018', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 019', 
 @message_id=0, 
@@ -54,10 +37,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 019',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 019', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 020', 
 @message_id=0, 
@@ -66,10 +47,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 020',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 020', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 021', 
 @message_id=0, 
@@ -78,10 +57,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 021',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 021', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 022', 
 @message_id=0, 
@@ -90,10 +67,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 022',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 022', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 023', 
 @message_id=0, 
@@ -102,10 +77,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 023',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 023', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 024', 
 @message_id=0, 
@@ -114,10 +87,8 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 024',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 024', @operator_name=@Operator, @notification_method = 7; 
-GO 
 
 EXEC msdb.dbo.sp_add_alert @name=N'Severity 025', 
 @message_id=0, 
@@ -126,11 +97,9 @@ EXEC msdb.dbo.sp_add_alert @name=N'Severity 025',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000'; 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Severity 025', @operator_name=@Operator, @notification_method = 7; 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_alert @name=N'Error Number 823', 
 @message_id=823, 
 @severity=0, 
@@ -138,11 +107,9 @@ EXEC msdb.dbo.sp_add_alert @name=N'Error Number 823',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000' 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Error Number 823', @operator_name=@Operator, @notification_method = 7; 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_alert @name=N'Error Number 824', 
 @message_id=824, 
 @severity=0, 
@@ -150,11 +117,9 @@ EXEC msdb.dbo.sp_add_alert @name=N'Error Number 824',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000' 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Error Number 824', @operator_name=@Operator, @notification_method = 7; 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_alert @name=N'Error Number 825', 
 @message_id=825, 
 @severity=0, 
@@ -162,7 +127,6 @@ EXEC msdb.dbo.sp_add_alert @name=N'Error Number 825',
 @delay_between_responses=60, 
 @include_event_description_in=1, 
 @job_id=N'00000000-0000-0000-0000-000000000000' 
-GO 
-
+ 
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Error Number 825', @operator_name=@Operator, @notification_method = 7; 
-GO 
+ 
