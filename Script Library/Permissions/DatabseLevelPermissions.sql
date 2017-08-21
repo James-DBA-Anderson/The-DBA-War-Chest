@@ -52,4 +52,7 @@
 
 	FROM		@Permissions
 
+	--WHERE		UserName NOT IN ('dbo')
+	--			AND ServerRole NOT IN ('db_datareader','db_datawriter')
+
 	ORDER BY	[Database], UserName, RoleType, ServerRole
