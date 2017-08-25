@@ -1,7 +1,7 @@
 
 -- Set time to wait between tests snapshots ---------
 
-DECLARE @WaitTime NVARCHAR(8) = '00:00:04'
+DECLARE @WaitTime NVARCHAR(8) = '00:01:00'
 
 -----------------------------------------------------
 
@@ -38,7 +38,6 @@ INSERT #WaitsToIgnore(WaitType) VALUES(N'BROKER_EVENTHANDLER'),
 (in this case, time since waits have been accumulating) */
  
 SELECT [sqlserver_start_time] FROM [sys].[dm_os_sys_info];
-GO
  
 /* Get the current time */
  
@@ -75,7 +74,6 @@ INNER JOIN [Waits] AS [W2]
 ON [W2].[RowNum] <= [W1].[RowNum]
 GROUP BY [W1].[RowNum]
 HAVING SUM ([W2].[Percentage]) - MAX ([W1].[Percentage]) < 95; -- percentage threshold
-GO
  
 /* Get the current time */
  
@@ -88,22 +86,18 @@ IF EXISTS (SELECT * FROM [tempdb].[sys].[objects] WHERE [name] = N'##SQLskillsSt
  
 IF EXISTS (SELECT * FROM [tempdb].[sys].[objects] WHERE [name] = N'##SQLskillsStats2')
   DROP TABLE [##SQLskillsStats2];
-GO
  
 SELECT [wait_type], [waiting_tasks_count], [wait_time_ms], 
   [max_wait_time_ms], [signal_wait_time_ms]
 INTO ##SQLskillsStats1
 FROM sys.dm_os_wait_stats;
-GO
  
-WAITFOR DELAY '00:05:00';
-GO
+WAITFOR DELAY @WaitTime;
  
 SELECT [wait_type], [waiting_tasks_count], [wait_time_ms],
   [max_wait_time_ms], [signal_wait_time_ms]
 INTO ##SQLskillsStats2
 FROM sys.dm_os_wait_stats;
-GO
  
 WITH [DiffWaits] AS
 (
@@ -159,7 +153,6 @@ ON [W2].[RowNum] <= [W1].[RowNum]
 GROUP BY [W1].[RowNum], [W1].[wait_type], [W1].[WaitS], 
   [W1].[ResourceS], [W1].[SignalS], [W1].[WaitCount], [W1].[Percentage]
 HAVING SUM ([W2].[Percentage]) - [W1].[Percentage] < 95; -- percentage threshold
-GO
  
 -- Cleanup
  
@@ -168,7 +161,6 @@ IF EXISTS (SELECT * FROM [tempdb].[sys].[objects] WHERE [name] = N'##SQLskillsSt
  
 IF EXISTS (SELECT * FROM [tempdb].[sys].[objects] WHERE [name] = N'##SQLskillsStats2')
   DROP TABLE [##SQLskillsStats2];
-GO
  
 /* Get the current time */
  
@@ -205,7 +197,6 @@ INNER JOIN [Waits] AS [W2]
 ON [W2].[RowNum] <= [W1].[RowNum]
 GROUP BY [W1].[RowNum]
 HAVING SUM ([W2].[Percentage]) - MAX ([W1].[Percentage]) < 95; -- percentage threshold
-GO
  
 /* Get the current time */
  
