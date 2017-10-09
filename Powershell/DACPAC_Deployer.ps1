@@ -4,7 +4,7 @@
 ## Needs work on catching errors from SQLPackage.exe and treating them as terminating errors
 
 $SQLPackagePath = "C:\program files\microsoft sql server\140\DAC\bin"
-$DACPAC_Path = "Path to DACPAC file"
+$DACPAC_Path = "C:\Projects\Communications\Source\Benefex.Communications.Db\bin\Debug\Communications.dacpac"
 
 $DatabaseName = "Communications"
 $TargetServer = "LocalHost"

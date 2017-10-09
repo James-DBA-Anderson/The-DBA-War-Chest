@@ -5,13 +5,13 @@ SETLOCAL EnableExtensions EnableDelayedExpansion
 
 :: Set environment variables ########################
 
-SET SQLPackagePath="C:\program files\microsoft sql server\140\DAC\bin"
-SET DACPAC_Path="Path to DACPAC file"
+SET SQLPackagePath="C:\program files (x86)\microsoft sql server\140\DAC\bin"
+SET DACPAC_Path="C:\Temp\dbareports.dacpac"
  
-SET DatabaseName=Communications
-SET TargetServer=LocalHost
+SET DatabaseName=dbareports
+SET TargetServer=FH-Test-SQL\SQLQA
 
-SET "OutputPath=C:\Temp\DACPAC\"
+SET "OutputPath=C:\Temp\"
 IF NOT %OutputPath:~-1% == \ SET OutputPath=%OutputPath%\
 
 SET "DriftReportPath=%OutputPath%%DatabaseName% Drift Report.xml"
@@ -25,7 +25,6 @@ CD %SQLPackagePath%
 
 :: Only run drift report if the database exists
 FOR /F %%i IN ('SQLCMD -S %TargetServer% -h-1 -Q "SET NOCOUNT ON; SELECT name from sys.databases WHERE name='%DatabaseName%'"') DO (
-	:: Generate drift report
 	SQLPackage.exe /Action:DriftReport /TargetServerName:"%TargetServer%" /TargetDatabaseName:"%DatabaseName%" /OverwriteFiles:True /OutputPath:"%DriftReportPath%" /Quiet:True
 	IF %ERRORLEVEL% NEQ 0 GOTO DriftReportError
 )
