@@ -1,0 +1,1 @@
+﻿choco upgrade sql-server-management-studio
