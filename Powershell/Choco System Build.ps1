@@ -34,6 +34,7 @@ choco install spotify
 choco install microsoft-teams
 
 choco install ag # The Silver Searcher
+choco install fileshredder
 
 #choco install avastfreeantivirus 
 choco install avginternetsecurity 
