@@ -14,6 +14,10 @@ choco install pester
 choco install rdcman
 choco install github
 #choco install docker
+#choco install NugetPackageExplorer
+
+#choco install jdk9
+#choco install maven
 
 choco install zoomit
 choco install nginx 
@@ -22,6 +26,7 @@ choco install cmder
 choco install onedrive
 choco install slack
 choco install python
+#choco install python2
 choco install pip
 choco install pycharm-community
 choco install agentransack
