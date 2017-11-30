@@ -15,6 +15,7 @@ choco install rdcman
 choco install github
 #choco install docker
 #choco install NugetPackageExplorer
+#choco install vcredist2017
 
 #choco install jdk9
 #choco install maven
