@@ -45,6 +45,7 @@ choco install fileshredder
 #choco install avastfreeantivirus 
 choco install avginternetsecurity 
 
+#choco install anaconda3
 #choco install minikube 
 
 choco install visualstudio2017community
