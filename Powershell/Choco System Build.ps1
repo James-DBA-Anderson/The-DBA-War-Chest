@@ -37,6 +37,10 @@ choco install sql-server-management-studio
 
 choco install visualstudiocode
 choco install vscode-powershell
+choco install vscode-mssql
+choco install vscode-docker
+choco install vscode-gitlens
+
 choco install pester
 #choco install docker
 #choco install NugetPackageExplorer
