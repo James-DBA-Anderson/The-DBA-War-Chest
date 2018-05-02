@@ -1,4 +1,4 @@
-#Install Chocolatey
+﻿#Install Chocolatey
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco feature enable -n allowGlobalConfirmation
@@ -17,12 +17,14 @@ choco install fileshredder
 
 
 # Chat
+
 #choco install skype
 #choco install slack
 #choco install microsoft-teams
 
 
 # File Sync
+
 choco install dropbox
 choco install onedrive
 
@@ -30,19 +32,22 @@ choco install onedrive
 # Development
 
 choco install git
+choco install Git-Credential-Manager-for-Windows
 choco install poshgit 
 choco install visualstudio2017community
-choco install sql-server-management-studio
-#choco install powerbi 
-
 choco install visualstudiocode
 choco install vscode-powershell
 choco install vscode-mssql
 choco install vscode-docker
 choco install vscode-gitlens
-
-choco install pester
 #choco install docker
+#choco install docker-for-windows
+
+choco install sql-server-management-studio
+#choco install powerbi 
+
+#choco install pester
+
 #choco install NugetPackageExplorer
 #choco install vcredist2017
 #choco install vim
@@ -71,4 +76,4 @@ choco install pester
 
 #choco install audacity
 #choco install steam
-choco install spotify 
+#choco install spotify 
