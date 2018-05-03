@@ -33,6 +33,7 @@ choco install git
 choco install poshgit 
 choco install visualstudio2017community
 choco install sql-server-management-studio
+#choco install sql-operations-studio
 #choco install powerbi 
 
 choco install visualstudiocode
