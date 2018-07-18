@@ -44,6 +44,7 @@ choco install vscode-gitlens
 #choco install docker-for-windows
 
 choco install sql-server-management-studio
+chcoc install sql-operations-studio
 #choco install powerbi 
 
 #choco install pester
@@ -56,7 +57,6 @@ choco install sql-server-management-studio
 #choco install ag # The Silver Searcher
 
 #choco install python
-#choco install python2
 #choco install pip
 #choco install pycharm-community
 #choco install anaconda3
