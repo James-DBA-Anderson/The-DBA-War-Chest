@@ -61,6 +61,7 @@ choco install sql-server-management-studio
 #choco install NugetPackageExplorer
 
 #choco install azure-cli
+#choco install azurepowershell
 
 #choco install vcredist2017
 #choco install vim
