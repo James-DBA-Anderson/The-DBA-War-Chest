@@ -1,4 +1,6 @@
 
+-- test script
+
 SELECT		SUBSTRING(s.text, p.stmt_start / 2, p.stmt_end / 2) AS SQL_Segment -- Divide by two if Unicode in use
 			,*
 

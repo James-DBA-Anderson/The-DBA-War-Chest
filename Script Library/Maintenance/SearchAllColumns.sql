@@ -1,4 +1,6 @@
 
+-- Test script
+
 declare @cols table (Schemas SYSNAME, Tab SYSNAME, Col SYSNAME, Processed BIT DEFAULT 0) 
 declare @results table (Schemas SYSNAME, Tab SYSNAME, Col SYSNAME)
 
